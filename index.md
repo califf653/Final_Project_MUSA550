@@ -1,16 +1,16 @@
 ---
 layout: default
 altair-loader:
-  altair-asthma: "1cityasthma.json", "500"
-  altair-teeth: "2cityteeth.json", "500"
-  altair-cancer: "cancer.json", "500"
-  altair-diabetes: "diabetes.json", "500"
-  altair-mh: "mentalhealth.json", "500"
-  altair-asthmac: "asthmac.json", "500"
-  altair-teethc: "teethc.json", "500"
-  altair-cancerc: "cancerc.json", "500"
-  altair-diabetesc: "diabetesc.json", "500"
-  altair-mhc: "mhc.json", "500"
+  altair-asthma: "1cityasthma.json"
+  altair-teeth: "2cityteeth.json"
+  altair-cancer: "cancer.json"
+  altair-diabetes: "diabetes.json"
+  altair-mh: "mentalhealth.json"
+  altair-asthmac: "asthmac.json"
+  altair-teethc: "teethc.json"
+  altair-cancerc: "cancerc.json"
+  altair-diabetesc: "diabetesc.json"
+  altair-mhc: "mhc.json"
 hv-loader:
   hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired
 folium-loader:
