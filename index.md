@@ -11,10 +11,11 @@ altair-loader:
   altair-cancerc: "cancerc.json", "500"
   altair-diabetesc: "diabetesc.json", "500"
   altair-mhc: "mhc.json", "500"
-
 hv-loader:
-  hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired 
-  
+  hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired
+folium-loader:
+  folium-chart-1: ["charts/foliumChart.html", "400"] # second argument is the desired height
+  folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the desired height
 ---
 
 # Understanding the relationship between trees, health, and wealth in Philadelphia
