@@ -1,7 +1,7 @@
 ---
 layout: default
 altair-loader:
-  altair-chart-1: "charts/measlesAltair.json"
+  altair-cityasthma: "final/1cityasthma.json"
 hv-loader:
   hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired height
 folium-loader:
@@ -9,28 +9,21 @@ folium-loader:
   folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the desired height
 ---
 
-# Welcome!
+# Understanding the relationship between nature, health, and wealth
 
-This single-page website demos how to display visualizations created with altair, hvplot, and folium.
+Through altair plots, maps, and holoviz maps, I wanted to visualze whether there was an overlap between health, wealth, and nature.
 
-For examples of how to use markdown to style text, see this [this page](./another-page.html).
+I used data from [The CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb).
 
-# Example: Embedding Altair & Hvplot Charts
+# Part 1 - Understanding Health
 
-This section will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [Hvplot](https://hvplot.pyviz.org/).
+
 
 ## Altair Example
 
-Below is a chart of the incidence of measles since 1928 for the 50 US states.
+I wanted to start by understanding the relationship between access to healthcare and health issues. I started by looking at the relationship between access to healthcare and asthma. Below is a chart that shows this relationship.
 
-<div id="altair-chart-1"></div>
-
-This was produced using Altair and embedded in this static web page. Note that you can also display Python code on this page:
-
-```python
-import altair as alt
-alt.renderers.enable('notebook')
-```
+<div id="altair-cityasthma"></div>
 
 ## HvPlot Example
 
