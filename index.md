@@ -1,7 +1,11 @@
 ---
 layout: default
 altair-loader:
-  altair-cityasthma: "1cityasthma.json"
+  altair-asthma: "1cityasthma.json"
+  altair-teeth:
+  altair-cancer:
+  altair-diabetes:
+  altair-mentalhealth:
 hv-loader:
   hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired height
 folium-loader:
@@ -13,23 +17,35 @@ folium-loader:
 
 Through altair plots, maps, and holoviz maps, I wanted to visualze whether there was an overlap between health, wealth, and nature.
 
-I used data from [The CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb).
+I used data from [the CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb).
 
-# Part 1 - Understanding Health
+## Part 1 - Understanding Health
 
-To understand health, I wanted to start by investigating the relationship between access to healthcare and health issues. To find this relationship, I used scatterplots. If the dots are generally trending up and right, it means that the more people without access to healthcare there are, the more incidence of that disease. Below I will show those relationships.
+To understand health, I wanted to start by investigating the relationship between access to healthcare and health issues. To find this relationship, I used scatterplots. If the dots are generally trending up and right, it means that the more people without access to healthcare there are, the more incidence of that disease. I assume that a higher lack of healthcare means higher unemployment and higher poverty rates. Below I will show those relationships.
 
 ### Asthma
 
-I wanted to start by understanding the relationship between access to healthcare and health issues. I started by looking at the relationship between access to healthcare and asthma. Below is a chart that shows this relationship.
+The first relationship I plotted was that of the prevalence of asthma and a lack of healthcare. The scatter plot shows that a larger population without healthcare also generally implies a higher population with asthma. However, there are some outliers, particularly in smaller cities. Perhaps ashtma is more related to an environmental issue or genetics than it is to healthcare access.
 
-<div id="altair-cityasthma"></div>
+<div id="altair-asthma"></div>
 
 ### Tooth Loss
 
-Lastly, the measles incidence produced using the HvPlot package:
+The second relationship I looked at was between access to healthcare and tooth loss. Half of all Americans don't have access to dental helathcare. The reason for poor dental health is often from [sugary food being more affordable](https://plutusfoundation.org/2020/healthy-eating-budget/#:~:text=Unhealthy%20food%20choices%20tend%20to,purchase%20cheap%20premade%20frozen%20dinners) than organic produce (not to mention more time saving). The effects of this [range from](https://longreads.com/2017/05/18/rich-teeth-poor-teeth-life-along-the-dental-divide/) reinforcing the cycle of poverty to opiod addiction and life-threatening antibiotic resistance. Dental health is an often overlooked indicator of wealth and a pressing issue in the US. Let's see if the numbers tell the same story.
 
-<div id="hv-chart-1"></div>
+<div id="altair-teeth"></div>
+
+Here, the numbers much more strongly show a correlation between tooth loss and access to healthcare. There is a linear relationship between the two in every city.
+
+### Cancer
+
+<div id="altair-teeth"></div>
+
+From the charts, cancer seems to be a much less discriminating illness. Its incidence has little to do with access to healthcare; incidence seems to cluster and even trend downwards as access to healthcare decreases.
+
+### Diabetes
+
+Diabetes is another 
 
 ## Notes
 
