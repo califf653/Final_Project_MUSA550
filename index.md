@@ -39,13 +39,22 @@ Here, the numbers much more strongly show a correlation between tooth loss and a
 
 ### Cancer
 
-<div id="altair-teeth"></div>
+<div id="altair-cancer"></div>
 
 From the charts, cancer seems to be a much less discriminating illness. Its incidence has little to do with access to healthcare; incidence seems to cluster and even trend downwards as access to healthcare decreases.
 
 ### Diabetes
 
-Diabetes is another 
+Diabetes has a similar relationship to healthcare access as asthma. Firstly, it is pretty highly occuring, and it's very related to healthcare access particularly in the larger cities of Philadelphia and Pittsburgh.
+
+<div id="altair-diabetes"></div>
+
+### Mental Health
+
+Access to mental healthcare and the amount of people with more than 2 weeks of poor mental health are highly related, similar to dental health. Mental health is exacerbated by stress, which can be a consequence of not being able to pay healthcare bills or even access a healthcare provider.
+
+<div id="altair-mentalhealth"></div>
+
 
 ## Notes
 
