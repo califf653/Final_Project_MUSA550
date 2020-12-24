@@ -1,7 +1,7 @@
 ---
 layout: default
 altair-loader:
-  altair-cityasthma: "final/1cityasthma.json"
+  altair-cityasthma: "1cityasthma.json"
 hv-loader:
   hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired height
 folium-loader:
@@ -17,15 +17,15 @@ I used data from [The CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cit
 
 # Part 1 - Understanding Health
 
+To understand health, I wanted to start by investigating the relationship between access to healthcare and health issues. To find this relationship, I used scatterplots. If the dots are generally trending up and right, it means that the more people without access to healthcare there are, the more incidence of that disease. Below I will show those relationships.
 
-
-## Altair Example
+### Asthma
 
 I wanted to start by understanding the relationship between access to healthcare and health issues. I started by looking at the relationship between access to healthcare and asthma. Below is a chart that shows this relationship.
 
 <div id="altair-cityasthma"></div>
 
-## HvPlot Example
+### Tooth Loss
 
 Lastly, the measles incidence produced using the HvPlot package:
 
