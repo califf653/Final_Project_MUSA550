@@ -26,7 +26,9 @@ I used data from [the CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cit
 
 ## Part 1 - Understanding Health: Looking statewide
 
-To understand health, I wanted to start by investigating the relationship between access to healthcare and health issues. To find this relationship, I used scatterplots. If the dots are generally trending up and right, it means that the more people without access to healthcare there are, the more incidence of that disease. I assume that a higher lack of healthcare means higher unemployment and higher poverty rates. Below I will show those relationships.
+To understand health, I wanted to start by investigating the relationship between access to healthcare and health issues. To find this relationship, I used scatterplots. If the dots are generally trending up and right, it means that the more people without access to healthcare there are, the more incidence of that disease. I assume that a higher lack of healthcare means higher unemployment and higher poverty rates. Below I will show those relationships with Altair. Altair is best suited for this kind of analysis because it's interactive and cross-referential, which is helpful here when wanting to dive deeper into multiple cities and lots of points that are near each other.
+
+To 
 
 ### Asthma
 
@@ -68,35 +70,10 @@ Access to mental healthcare and the amount of people with more than 2 weeks of p
 <div id="altair-mhc"></div>
 
 
-## Part 2 - Mapping health indicators in Philadelphia, including trees
+## Part 2 - Mapping health indicators in Philadelphia
 
 
 ## Part 3 - Layering historic redlining data: Does historic racial descrimination matter?
+Trees and redlining
 
-
-## Notes
-
-- See the [raw source code](https://raw.githubusercontent.com/MUSA-550-Fall-2020/github-pages-starter/master/_posts/2019-04-13-measles-charts.md) of this post for details on how these charts were embedded.
-- See the [lecture 13A slides](https://github.com/MUSA-550-Fall-2020/week-13/blob/master/lecture-13A.ipynb) for the code that produced these plots.
-
-**Important: When embedding charts, you will likely need to adjust the width/height of the charts before embedding them in the page so they fit nicely when embedded.**
-
-# Example: Embedding Folium charts
-
-This post will show examples of embedding interactive maps produced using [Folium](https://github.com/python-visualization/folium).
-
-## OSMnx and Street Networks
-
-The shortest route between the Art Museum and the Liberty Bell:
-
-<div id="folium-chart-1"></div>
-
-<br/>
-
-## Percentage of Households without Internet
-
-The percentage of households without internet by county:
-
-<div id="folium-chart-2"></div>
-
-See the [lecture 9B slides](https://musa-550-fall-2020.github.io/slides/lecture-9B.html) and the [lecture 10A slides](https://musa-550-fall-2020.github.io/slides/lecture-10A.html) for the code that produced these plots.
+Redlining and health
