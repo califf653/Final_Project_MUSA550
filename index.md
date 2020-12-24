@@ -73,3 +73,30 @@ Access to mental healthcare and the amount of people with more than 2 weeks of p
 
 ## Part 3 - Layering historic redlining data: Does historic racial descrimination matter?
 
+
+## Notes
+
+- See the [raw source code](https://raw.githubusercontent.com/MUSA-550-Fall-2020/github-pages-starter/master/_posts/2019-04-13-measles-charts.md) of this post for details on how these charts were embedded.
+- See the [lecture 13A slides](https://github.com/MUSA-550-Fall-2020/week-13/blob/master/lecture-13A.ipynb) for the code that produced these plots.
+
+**Important: When embedding charts, you will likely need to adjust the width/height of the charts before embedding them in the page so they fit nicely when embedded.**
+
+# Example: Embedding Folium charts
+
+This post will show examples of embedding interactive maps produced using [Folium](https://github.com/python-visualization/folium).
+
+## OSMnx and Street Networks
+
+The shortest route between the Art Museum and the Liberty Bell:
+
+<div id="folium-chart-1"></div>
+
+<br/>
+
+## Percentage of Households without Internet
+
+The percentage of households without internet by county:
+
+<div id="folium-chart-2"></div>
+
+See the [lecture 9B slides](https://musa-550-fall-2020.github.io/slides/lecture-9B.html) and the [lecture 10A slides](https://musa-550-fall-2020.github.io/slides/lecture-10A.html) for the code that produced these plots.
