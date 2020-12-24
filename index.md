@@ -1,15 +1,15 @@
 ---
 layout: default
 altair-loader:
-  altair-asthma: "1cityasthma.json"
-  altair-teeth: "2cityteeth.json"
-  altair-cancer: "cancer.json"
+  altair-asthma: "1cityasthma.json", 500
+  altair-teeth: "2cityteeth.json", 500
+  altair-cancer: "cancer.json", 500
   altair-diabetes: "diabetes.json"
   altair-mh: "mentalhealth.json"
   altair-asthmac: "asthmac.json"
   altair-teethc: "teethc.json"
-  altair-cancerc: "cancerc.json"
-  altair-diabetesc: "diabetesc.json"
+  altair-cancerc: "cancerc.json", 500
+  altair-diabetesc: "diabetesc.json", 500
   altair-mhc: "mhc.json"
 
 hv-loader:
