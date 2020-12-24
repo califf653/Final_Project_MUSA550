@@ -1,16 +1,16 @@
 ---
 layout: default
 altair-loader:
-  altair-asthma: "1cityasthma.json", 500
-  altair-teeth: "2cityteeth.json", 500
-  altair-cancer: "cancer.json", 500
-  altair-diabetes: "diabetes.json"
-  altair-mh: "mentalhealth.json"
-  altair-asthmac: "asthmac.json"
-  altair-teethc: "teethc.json"
-  altair-cancerc: "cancerc.json", 500
-  altair-diabetesc: "diabetesc.json", 500
-  altair-mhc: "mhc.json"
+  altair-asthma: "1cityasthma.json", "500"
+  altair-teeth: "2cityteeth.json", "500"
+  altair-cancer: "cancer.json", "500"
+  altair-diabetes: "diabetes.json", "500"
+  altair-mh: "mentalhealth.json", "500"
+  altair-asthmac: "asthmac.json", "500"
+  altair-teethc: "teethc.json", "500"
+  altair-cancerc: "cancerc.json", "500"
+  altair-diabetesc: "diabetesc.json", "500"
+  altair-mhc: "mhc.json", "500"
 
 hv-loader:
   hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired height
@@ -34,18 +34,22 @@ To understand health, I wanted to start by investigating the relationship betwee
 The first relationship I plotted was that of the prevalence of asthma and a lack of healthcare. The scatter plot shows that a larger population without healthcare also generally implies a higher population with asthma. However, there are some outliers, particularly in smaller cities. Perhaps ashtma is more related to an environmental issue or genetics than it is to healthcare access.
 
 <div id="altair-asthma"></div>
+<div id="altair-asthmac"></div>
+
 
 ### Tooth Loss
 
 The second relationship I looked at was between access to healthcare and tooth loss. Half of all Americans don't have access to dental helathcare. The reason for poor dental health is often from [sugary food being more affordable](https://plutusfoundation.org/2020/healthy-eating-budget/#:~:text=Unhealthy%20food%20choices%20tend%20to,purchase%20cheap%20premade%20frozen%20dinners) than organic produce (not to mention more time saving). The effects of this [range from](https://longreads.com/2017/05/18/rich-teeth-poor-teeth-life-along-the-dental-divide/) reinforcing the cycle of poverty to opiod addiction and life-threatening antibiotic resistance. Dental health is an often overlooked indicator of wealth and a pressing issue in the US. Let's see if the numbers tell the same story.
 
 <div id="altair-teeth"></div>
+<div id="altair-teethc"></div>
 
 Here, the numbers much more strongly show a correlation between tooth loss and access to healthcare. There is a linear relationship between the two in every city.
 
 ### Cancer
 
 <div id="altair-cancer"></div>
+<div id="altair-cancerc"></div>
 
 From the charts, cancer seems to be a much less discriminating illness. Its incidence has little to do with access to healthcare; incidence seems to cluster and even trend downwards as access to healthcare decreases.
 
@@ -54,12 +58,15 @@ From the charts, cancer seems to be a much less discriminating illness. Its inci
 Diabetes has a similar relationship to healthcare access as asthma. Firstly, it is pretty highly occuring, and it's very related to healthcare access particularly in the larger cities of Philadelphia and Pittsburgh.
 
 <div id="altair-diabetes"></div>
+<div id="altair-diabetesc"></div>
+
 
 ### Mental Health
 
 Access to mental healthcare and the amount of people with more than 2 weeks of poor mental health are highly related, similar to dental health. Mental health is exacerbated by stress, which can be a consequence of not being able to pay healthcare bills or even access a healthcare provider.
 
 <div id="altair-mh"></div>
+<div id="altair-mhc"></div>
 
 
 ## Notes
