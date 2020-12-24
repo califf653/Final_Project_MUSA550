@@ -2,10 +2,16 @@
 layout: default
 altair-loader:
   altair-asthma: "1cityasthma.json"
-  altair-teeth:
-  altair-cancer:
-  altair-diabetes:
-  altair-mentalhealth:
+  altair-teeth: "2cityteeth.json"
+  altair-cancer: "cancer.json"
+  altair-diabetes: "diabetes.json"
+  altair-mh: "mentalhealth.json"
+  altair-asthmac: "asthmac.json"
+  altair-teethc: "teethc.json"
+  altair-cancerc: "cancerc.json"
+  altair-diabetesc: "diabetesc.json"
+  altair-mhc: "mhc.json"
+
 hv-loader:
   hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired height
 folium-loader:
@@ -53,7 +59,7 @@ Diabetes has a similar relationship to healthcare access as asthma. Firstly, it 
 
 Access to mental healthcare and the amount of people with more than 2 weeks of poor mental health are highly related, similar to dental health. Mental health is exacerbated by stress, which can be a consequence of not being able to pay healthcare bills or even access a healthcare provider.
 
-<div id="altair-mentalhealth"></div>
+<div id="altair-mh"></div>
 
 
 ## Notes
