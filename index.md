@@ -15,7 +15,8 @@ altair-loader:
   altair-tree: "charts/redtree.json"
 hv-loader:
   hv-chart-1: ["charts/healthdash.html", "500"] # second argument is the desired
-  hv-chart-1: ["charts/redlhv.html", "500"] # second argument is the desired
+  hv-chart-2: ["charts/redlhv.html", "500"] # second argument is the desired
+  hv-chart-3: ["charts/healthnred.html", "500"]
 
 folium-loader:
   folium-chart-1: ["charts/healthdash.html", "500"] # second argument is th
