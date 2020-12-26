@@ -21,7 +21,7 @@ hv-loader:
   hv-chart-3: ["charts/healthnred.html", "500"]
 ---
 
-# Understanding the relationship between trees, health, and wealth in Philadelphia
+# Healthcare Access and Health Outcomes in PA and Philadelphia
 
 Through altair plots, maps, and holoviz maps, I wanted to visualze whether there was an overlap between health, wealth, and nature.
 
