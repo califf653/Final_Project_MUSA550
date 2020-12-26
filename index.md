@@ -25,7 +25,7 @@ hv-loader:
 
 Through altair plots, maps, and holoviz maps, I wanted to visualze whether there was an overlap between health, wealth, and nature.
 
-I used data from [the CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb), Redlining data from the [Mapping Inequalities](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58&text=downloads) database, [OpenDataPhilly's city limits file, 2015 trees file, 
+I used data from [the CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb), Redlining data from the [Mapping Inequalities](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58&text=downloads) database, [OpenDataPhilly's city limits file](https://www.opendataphilly.org/dataset/city-limits), [2015 trees file](https://opendataphilly.org/dataset/ppr-tree-canopy), and a Landsat raster image of Philadelphia.
 
 ## Part 1 - Understanding Health: Looking Philadelphia-wide
 
@@ -35,7 +35,7 @@ To understand health, I wanted to start by investigating the relationship betwee
 
 <div id="altair-intro"></div>
 
-The dataset from the CDC presents its values in percentages, which means I did not have to normalize by population, though the population was available on the dataset. The above barchart shows the prevalence of the population without healthcare per Pennsylvania city. You may hover over each bar to see the specific percentage. Philadelphia and Reading are the most precariously covered populations in the state. To better understand how this lack of access to healthcare affects actual health, I plotted the relationships between lack of access and various health outcomes. I used a dropdown menu to show each scatterplot individially by city, as well as a selector scatter plot and bar chart so that outliers could be identified more easily. The bar chart on the bottom of each scatter plot show the number of census tracts in each city.
+The dataset from the CDC presents its values in percentages, which means I did not have to normalize by population, though the population was available on the dataset. The above barchart shows the prevalence of the population without healthcare per Pennsylvania city. You may hover over each bar to see the specific percentage. Philadelphia and Reading are the most precariously covered populations in the state. To better understand how this lack of access to healthcare affects actual health, I plotted the relationships between lack of access and various health outcomes. Initially, I had a scatter plot for each city, but it took up a lot of space and so I instead used a dropdown menu to show each scatterplot individially by city, as well as a selector scatter plot and bar chart so that outliers could be identified more easily. The bar chart on the bottom of each scatter plot show the number of census tracts in each city.
 
 
 ### Asthma
@@ -64,7 +64,7 @@ From the charts, cancer seems to be a much less discriminating illness. Its inci
 
 ### Diabetes
 
-Diabetes has a similar relationship to healthcare access as asthma. Firstly, it is pretty highly occuring, and it's very related to healthcare access particularly in the larger cities of Philadelphia and Pittsburgh.
+Diabetes has a similar scatterplot as that of asthma. Firstly, it is pretty highly occuring, and it's very related to healthcare access particularly in the larger cities of Philadelphia and Pittsburgh.
 
 <div id="altair-diabetes"></div>
 <div id="altair-diabetesc"></div>
@@ -113,11 +113,14 @@ I overlayed two Altair maps, redlining and trees by NDVI to show this. The brigh
 
 <div id="altair-tree"></div>
 
-Health and redlining are hard to see polygon over polygon. Following is a dashboard with the health dashboard layered over the redlining map on HV plot.
+I found plotting in Altair, using point data, is more more illustrative of overlap than going polygon over polygon. I used greys rather than viridis or more colors. The darker grey is more visible in the same spot as the polygon map earlier, in the heart of Northeast Philadelphia.
+
+<div id="altair-pointaccred"></div> 
+
+Health and redlining are hard to see polygon over polygon. Following is a dashboard with the health dashboard layered over the redlining map on HV plot. This is more useful in the sense that you are able to use the dropdown to quickly sift through each health outcome compared to the redlining map.
 
 <div id="hv-chart-3"></div>
 
-I find that it is less illustrative of location, but more illustrative of overlap when plotting by point rather than polygon on the on top of the redlining map for visibility, using greys rather than viridis or more colors. The darker grey is more visible in the same spot as the polygon map earlier, in the heart of Northeast Philadelphia.
+I was unable to create a dropdown for the Altair maps, as that would have been my preferred method of showing the above dropdown.
 
-<div id="altair-pointaccred"></div>
-
+This project could be improved by adding more layers and at a point when Folium has more interactivity with Cloropleth maps. It could include current racial data and poverty data to look at those two variables in relation to health.
