@@ -11,8 +11,14 @@ altair-loader:
   altair-cancerc: "charts/cancerc.json"
   altair-diabetesc: "charts/diabetesc.json"
   altair-mhc: "charts/mentalc.json"
+  altair-red: "charts/redlalt.json"
+  altair-tree: "charts/redtree.json"
 hv-loader:
   hv-chart-1: ["charts/healthdash.html", "500"] # second argument is the desired
+  hv-chart-1: ["charts/redlhv.html", "500"] # second argument is the desired
+
+folium-loader:
+  folium-chart-1: ["charts/healthdash.html", "500"] # second argument is th
 ---
 
 # Understanding the relationship between trees, health, and wealth in Philadelphia
@@ -81,8 +87,17 @@ Race and poverty are variables I haven't mapped in this project but are easily v
 
 ## Part 3 - Layering historic redlining data: Does historic racial descrimination matter?
 
-To investigate whether there was a relationship between redlining and access healthcare and subsequent health outcomes, I overlayed the health map onto the redlined map of Philadelphia.
+To investigate whether there was a relationship between redlining and access healthcare and subsequent health outcomes, I overlayed the health map onto the redlined map of Philadelphia. Redlining in Philadelphia was primarily targeted at innercity neighborhoods and West Philadelphia, which were Black. The outskirts of Phialdelphia, where White residents lived, we rated As and Bs and thus given favorable borrowing terms.
 
 
-Trees and redlining
+<div id="hv-chart-2"></div>
+
+Holoviews/HVplot does not offer great colormaps, so a green-to-red scale doesn't exist. Thus, I chose OrRd to show increasing unfavorability for inner-city neighborhoods. The following Altair map and colormap does a better job of showing what the real "redlining" map looked like.
+
+<div id="altair-red"></div>
+
+Before diving into health, I wanted to also show whether a relationship existed between the normalized difference vegetation index (NDVI) and redlining. I overlayed two Altair maps, redlining and trees by NDVI to show this. The brighter spots within the circles representing the points at which there are trees in  2015 seem to be more related to the location of parks (the blank spaces on the map) than with redlining, as you can see below.
+
+<div id="altair-tree"></div>
+
 
