@@ -13,13 +13,11 @@ altair-loader:
   altair-mhc: "charts/mentalc.json"
   altair-red: "charts/redlalt.json"
   altair-tree: "charts/redtree.json"
+  altair-pointaccred: "charts/accessnred.json"
 hv-loader:
   hv-chart-1: ["charts/healthdash.html", "500"] # second argument is the desired
   hv-chart-2: ["charts/redlhv.html", "500"] # second argument is the desired
   hv-chart-3: ["charts/healthnred.html", "500"]
-
-folium-loader:
-  folium-chart-1: ["charts/healthdash.html", "500"] # second argument is th
 ---
 
 # Understanding the relationship between trees, health, and wealth in Philadelphia
@@ -101,4 +99,11 @@ Before diving into health, I wanted to also show whether a relationship existed 
 
 <div id="altair-tree"></div>
 
+Health and redlining are hard to see polygon over polygon. Following is a dashboard with the health dashboard layered over the redlining map on HV plot.
+
+<div id="hv-chart-3"></div>
+
+I find that it is less illustrative of location, but more illustrative of overlap when plotting by point rather than polygon on the on top of the redlining map for visibility, using greys rather than viridis or more colors. The darker grey is more visible in the same spot as the polygon map earlier, in the heart of Northeast Philadelphia.
+
+<div id="altair-pointaccred"></div>
 
