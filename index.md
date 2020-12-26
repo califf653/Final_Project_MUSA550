@@ -1,18 +1,18 @@
 ---
 layout: default
 altair-loader:
-  altair-asthma: "1cityasthma.json"
-  altair-teeth: "2cityteeth.json"
-  altair-cancer: "cancer.json"
-  altair-diabetes: "diabetes.json"
-  altair-mh: "mentalhealth.json"
-  altair-asthmac: "asthmac.json"
-  altair-teethc: "teethc.json"
-  altair-cancerc: "cancerc.json"
-  altair-diabetesc: "diabetesc.json"
-  altair-mhc: "mhc.json"
+  altair-asthma: "charts/1cityasthma.json"
+  altair-teeth: "charts/2cityteeth.json"
+  altair-cancer: "charts/cancer.json"
+  altair-diabetes: "charts/diabetes.json"
+  altair-mh: "charts/mentalhealth.json"
+  altair-asthmac: "charts/asthmac.json"
+  altair-teethc: "charts/teethc.json"
+  altair-cancerc: "charts/cancerc.json"
+  altair-diabetesc: "charts/diabetesc.json"
+  altair-mhc: "charts/mentalc.json"
 hv-loader:
-  hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the desired
+  hv-chart-1: ["charts/healthdash.html", "500"] # second argument is the desired
 folium-loader:
   folium-chart-1: ["charts/foliumChart.html", "400"] # second argument is the desired height
   folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the desired height
@@ -71,7 +71,7 @@ Access to mental healthcare and the amount of people with more than 2 weeks of p
 
 
 ## Part 2 - Mapping health indicators in Philadelphia
-
+<div id="hv-chart-1"></div>
 
 ## Part 3 - Layering historic redlining data: Does historic racial descrimination matter?
 Trees and redlining
