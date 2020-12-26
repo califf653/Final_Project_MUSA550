@@ -1,11 +1,12 @@
 ---
 layout: default
 altair-loader:
-  altair-asthma: "charts/1cityasthma.json"
-  altair-teeth: "charts/2cityteeth.json"
-  altair-cancer: "charts/cancer.json"
-  altair-diabetes: "charts/diabetes.json"
-  altair-mh: "charts/mentalhealth.json"
+  altair-intro: "charts/intro.json"
+  altair-asthma: "charts/asthmadd.json"
+  altair-teeth: "charts/teethdd.json"
+  altair-cancer: "charts/cancerdd.json"
+  altair-diabetes: "charts/diabdd.json"
+  altair-mh: "charts/mhdd.json"
   altair-asthmac: "charts/asthmac.json"
   altair-teethc: "charts/teethc.json"
   altair-cancerc: "charts/cancerc.json"
@@ -26,11 +27,16 @@ Through altair plots, maps, and holoviz maps, I wanted to visualze whether there
 
 I used data from [the CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb).
 
-## Part 1 - Understanding Health: Looking statewide
+## Part 1 - Understanding Health: Looking Philadelphia-wide
 
 To understand health, I wanted to start by investigating the relationship between access to healthcare and health issues. To find this relationship, I used scatterplots. If the dots are generally trending up and right, it means that the more people without access to healthcare there are, the more incidence of that disease. I assume that a higher lack of healthcare means higher unemployment and higher poverty rates. Below I will show those relationships with Altair. Altair is best suited for this kind of analysis because it's interactive and cross-referential, which is helpful here when wanting to dive deeper into multiple cities and lots of points that are near each other.
 
-To 
+### Overview 
+
+<div id="altair-intro"></div>
+
+The dataset from the CDC presents its values in percentages, which means I did not have to normalize by population, though the population was available on the dataset. The above barchart shows the prevalence of the population without healthcare per Pennsylvania city. You may hover over each bar to see the specific percentage. Philadelphia and Reading are the most precariously covered populations in the state. To better understand how this lack of access to healthcare affects actual health, I plotted the relationships between lack of access and various health outcomes. I used a dropdown menu to show each scatterplot individially by city, as well as a selector scatter plot and bar chart so that outliers could be identified more easily. The bar chart on the bottom of each scatter plot show the number of census tracts in each city.
+
 
 ### Asthma
 
