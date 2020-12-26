@@ -25,7 +25,7 @@ hv-loader:
 
 Through altair plots, maps, and holoviz maps, I wanted to visualze whether there was an overlap between health, wealth, and nature.
 
-I used data from [the CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb).
+I used data from [the CDC](https://chronicdata.cdc.gov/500-Cities-Places/500-Cities-Census-Tract-level-Data-GIS-Friendly-Fo/k86t-wghb), [
 
 ## Part 1 - Understanding Health: Looking Philadelphia-wide
 
@@ -101,7 +101,7 @@ Holoviews/HVplot does not offer great colormaps, so a green-to-red scale doesn't
 
 <div id="altair-red"></div>
 
-Before diving into health, I wanted to also show whether a relationship existed between the normalized difference vegetation index (NDVI) and redlining. I overlayed two Altair maps, redlining and trees by NDVI to show this. The brighter spots within the circles representing the points at which there are trees in  2015 seem to be more related to the location of parks (the blank spaces on the map) than with redlining, as you can see below.
+Before diving into health, I wanted to also show whether a relationship existed between the normalized difference vegetation index (NDVI) and redlining. I overlayed two Altair maps, redlining and trees by NDVI to show this. The brighter spots within the circles representing the points at which there are trees in  2015 seem to be more related to the location of parks (the blank spaces on the map) than with redlining, as you can see below. This isn't a great map because the dots are grouped by census tract but the dots don't represent the amount of trees per census tract. It creates one dot for the census tract rather than an aggegrated dot thats larger when there are more trees or simply the actual number/location of each tree. This map shows 
 
 <div id="altair-tree"></div>
 
