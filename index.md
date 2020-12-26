@@ -13,9 +13,6 @@ altair-loader:
   altair-mhc: "charts/mentalc.json"
 hv-loader:
   hv-chart-1: ["charts/healthdash.html", "500"] # second argument is the desired
-folium-loader:
-  folium-chart-1: ["charts/foliumChart.html", "400"] # second argument is the desired height
-  folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the desired height
 ---
 
 # Understanding the relationship between trees, health, and wealth in Philadelphia
@@ -71,9 +68,21 @@ Access to mental healthcare and the amount of people with more than 2 weeks of p
 
 
 ## Part 2 - Mapping health indicators in Philadelphia
+
+To better understand how access to healthcare and distribution of the prevalence of cancer, mental health, diabetes, tooth loss, and asthma present in Philadelphia specifically, I created an HVplot dashboard to show how each census tract relats to each health problem on a map. You may use the dropdown menu to look at each.
+
 <div id="hv-chart-1"></div>
 
+To make these maps, I had to join my health data frame, which's geometry was in points, with my census tract shape file's polygons. I used a "within" spatial join to achieve this. Once joined, I had to merge the new spatially joined DF to the existing geodataframe. To make the hvplot map, I was running into problems with trying to represent strings and integers, so I had to make sure I converted 'value' to a numerical value. I chose an ESRI basemap because I like the natural look for this kind of polygon map. I could have chosen from a pool of others, like a street map.
+
+Access to healthcare is most limited in North Philadelphia, in an area with a large Puerto Rican population. Asthma is widespread across the city, but most visibly on the Schuyllkill River, likely due to the amount of industry historically in that area. 14+ mental health days are more common in the city, but seem to be least in the outter rings of Philadelphia and Center City.  Tooth loss, diabetes, poverty, and race seem to overlap in West Philly, North and Northeast Philly, and is less pronounced in Center City and other Whiter neighborhoods.  Cancer is relatively low-prevalence, but has some high-occuring census tracts in the north.
+
+Race and poverty are variables I haven't mapped in this project but are easily verified elsewhere. If I were to add to this project, I would map current race makeup and poverty to add robustness. 
+
 ## Part 3 - Layering historic redlining data: Does historic racial descrimination matter?
+
+To investigate whether there was a relationship between redlining and access healthcare and subsequent health outcomes, I overlayed the health map onto the redlined map of Philadelphia.
+
+
 Trees and redlining
 
-Redlining and health
